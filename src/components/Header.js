@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export const Header = () => {
-  const [showLoginForm, setShowLoginForm] = useState(false); // State to track form visibility
-  const location = useLocation(); // Hook to get current route
-  const navigate = useNavigate(); // Hook to programmatically navigate
+  const [showLoginForm, setShowLoginForm] = useState(false); 
+  const location = useLocation(); 
+  const navigate = useNavigate(); 
 
   const toggleLoginForm = () => {
     if (location.pathname === "/Login") {
-      navigate("/"); // Redirect to home if on the login page
+      navigate("/"); 
     } else {
-      setShowLoginForm(!showLoginForm); // Toggle the login form visibility
-      navigate("/Login"); // Navigate to the login page
+      setShowLoginForm(!showLoginForm); 
+      navigate("/Login"); 
     }
   };
 
