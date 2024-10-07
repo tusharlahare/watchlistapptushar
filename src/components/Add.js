@@ -27,10 +27,10 @@ export const Add = () => {
       });
   };
 
-  const [showLoginForm, setShowLoginForm] = useState(false); // State to track form visibility
+  const [showLoginForm, setShowLoginForm] = useState(false); 
 
   const toggleLoginForm = () => {
-    setShowLoginForm(!showLoginForm); // Toggle the visibility of the login form
+    setShowLoginForm(!showLoginForm); 
   };
 
   return (
